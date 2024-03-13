@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Artist</title>
+    <style>
+      /* Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      /* Global Styles */
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+      }
+
+      h1 {
+          height: 40px;
+          background-color: #2c8eb4;
+          text-align: center;
+          padding: 40px;
+          color: #fff;
+          transition: background-color 0.3s ease-in-out;
+      }
+
+      nav {
+          background-color: #333;
+          overflow: hidden;
+          color: white;
+          transition: background-color 0.3s ease-in-out;
+      }
+
+      nav a {
+          text-decoration: none;
+          background: #333;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          float: left;
+          transition: color 0.3s ease-in-out;
+      }
+
+      nav a:hover {
+          color: #2c8eb4;
+      }
+
+      .about__social-link {
+          display: inline-block;
+          background-color: #333;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          margin-right: 10px;
+          text-decoration: none;
+          transition: background-color 0.3s ease-in-out;
+      }
+
+      .about__social-link:hover {
+          background-color: #2c8eb4;
+      }
+
+      footer {
+          background-color: #f3efef;
+          overflow: hidden;
+          text-align: center;
+          padding: 20px;
+          color: #555;
+      }
+
+      footer a {
+          text-decoration: none;
+          color: #555;
+          padding: 10px;
+      }
+
+      /* About Page Specific Styles */
+      .about__container {
+          padding: 20px;
+      }
+
+      .about__data {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .about__title {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      .about__description {
+          color: #333;
+          line-height: 1.6;
+          margin-bottom: 20px;
+      }
+
+      .about__social {
+          margin-top: 20px;
+      }
+
+      .about__social-link:last-child {
+          margin-right: 0;
+      }
+  </style>
+</head>
+<body>
+<header>
+    <h1>Art Gallery</h1>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+<main class="main">
+    <section class="about section container" id="about">
+        <div class="about__container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">
+                    About Me
+                </h2>
+                <p class="about__description">
+                    Hey there, I'm Yash Pal, a passionate artist on a journey of self-discovery through the world of art. Self-taught and driven by my own curiosity, I've delved into the captivating realms of anime art and sketches, finding joy and expression in every stroke of the pencil. As a beginner, I'm constantly honing my skills and exploring new techniques, often turning to the vast resources of YouTube for inspiration and guidance. Alongside my artistic pursuits, I'm currently pursuing my degree in Information Technology, finding the perfect balance between the worlds of creativity and technology. Join me as I continue to learn, create, and share my artistic journey with the world.
+                </p>
+                <!-- Social Media Links -->
+                <div class="about__social">
+                    <h3 class="about__subtitle">Connect with Me:</h3>
+                    <div class="about__social-links">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/yash-pal-9b639828a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="about__social-link">
+                            <i class="ri-linkedin-fill"></i> LinkedIn
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/_ghost_of_uchiha_1/?utm_source=qr&igsh=MWJzdW94dzQxM3J5Zg%3D%3D" target="_blank" class="about__social-link">
+                            <i class="ri-instagram-line"></i> Instagram
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/Yash55849" target="_blank" class="about__social-link">
+                            <i class="ri-github-line"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer class="footer section">
+    <div class="footer__container container grid">
+        <div class="footer__content">
+            <p class="footer__copy">&#169; 2024 ArtHub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+  window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle('scroll-active', window.scrollY > 0);
+  });
+</script>
+</body>
+</html>
